@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kontakt - EPD</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">EPD<span></a>
+      <nav class="site-nav" aria-label="Glavna navigacija">
+        <a href="index.html">Naslovna</a>
+        <a href="usluge.html">Usluge</a>
+        <a href="kako-radimo.html">Kako radimo</a>
+        <a href="o-nama.html">O nama</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Kontaktirajte nas</h1>
+        <p>
+          Ispunite formu, a mi ćemo spremiti upit i odgovoriti u 
+          najkraćem mogućem roku.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <article class="card">
+          <h2>Kontakt podaci</h2>
+          <p>Telefon: +385 91 260 7431</p>
+          <p>Email: info@epd.hr</p>
+          <p>Adresa: Hrvoja Vukčića Hrvatinića 70, Slavonski Brod</p>
+          <p>
+            Prati nas:
+            <a href="#">Facebook</a>,
+            <a href="#">Instagram</a>,
+            <a href="#">LinkedIn</a>
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Pošaljite upit</h2>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="ime">Ime i prezime</label>
+              <input type="text" id="ime" name="ime" />
+              <small class="error" id="imeError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="usluga">Usluga</label>
+              <select id="usluga" name="usluga">
+                <option value="">Odaberi</option>
+                <option>Paketna dostava</option>
+                <option>Ekspresna dostava</option>
+                <option>Selidba</option>
+                <option>Pakiranje</option>
+              </select>
+              <small class="error" id="uslugaError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="poruka">Poruka</label>
+              <textarea id="poruka" name="poruka" rows="5"></textarea>
+              <small class="error" id="porukaError"></small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Pošalji</button>
+            <p class="success" id="successMsg"></p>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 EPD - Ekspresna Paketna Distribucija</p>
+    </div>
+  </footer>
+</body>
+</html>
